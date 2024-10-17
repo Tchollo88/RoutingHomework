@@ -43,3 +43,5 @@ router.delete('/person/:id', function(req, res, next) {
     data[index] = data.filter(person => person.id != req.params.id);
     res.send(data[index]);
  });
+
+ module.exports = router;
